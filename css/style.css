@@ -1,19 +1,15 @@
 .menu-back {
-    width: 1200px;
-    height: 42px;
-    background-color: #293449;
-    color: white;
-  }
+  background-color: #293449;
+  color: white;
+}
 
 
-  .footer-nav-back {
-    width: 1200px;
-    height: 300px;
-    background-color: #32425c;
-  }
+.footer-nav-back {
+  color: white;
+  background-color: #32425c;
+}
 
-  .footer-contacts-back {
-    width: 1200px;
-    height: 107px;
-    background-color: #293449;
-  }
+.footer-contacts-back {
+  color: white;
+  background-color: #293449;
+}
