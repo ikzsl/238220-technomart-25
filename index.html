@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8" />
   <title>Техномарт: инструменты для ремонта</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="top-menu menu-back">
-      <a class="header-logo">
+      <a href="#" class="header-logo">
         <img src="img/logo.png" alt="Логотип интернет-магазина Техномарт" />
       </a>
       <!--форма поиска-->
       <form class="search" action="https://echo.htmlacademy.ru" method="get">
         <label>Поиск:<input type="text" placeholder="Поиск:"></label>
-        <button type="submit">Найти</button>
+        <button class="visually-hidden" type="submit">Найти</button>
       </form>
       <a href="#" class="bookmarks">Закладки: 0</a>
       <a href="#" class="shopping-cart"> Корзина: 0</a>
@@ -24,7 +26,7 @@
     </div>
 
     <nav class="main-navigation">
-      <h1>
+      <h1 class="headline">
         Интернет-магазин строительных материалов и инструментов для ремонта
       </h1>
       <p class="header-contact">
@@ -36,9 +38,7 @@
         <a class="registration-link" href="#">Регистрация</a>
       </div>
       <ul class="site-navigation">
-        <li class="site-navigation-current">
-          <a href="index.thml">Главная</a>
-        </li>
+        <li class="site-navigation-current"><a href="index.thml">Главная</a></li>
         <li><a href="about.html">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="news.html">Новости</a></li>
@@ -72,8 +72,8 @@
   </main>
   <footer class="main-footer">
     <div class="footer-menu footer-nav-back">
-      <a href="index.html">
-        <img src="img/logo.png" alt="Логотип интернет-магазина Техномарт" class="footer-logo" />
+      <a class="footer-logo" href="index.html">
+        <img src="img/logo.png" alt="Логотип интернет-магазина Техномарт" />
       </a>
       <p class="contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br />
@@ -105,7 +105,7 @@
         Обратная связь:<br />
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru </a>
       </p>
-      <p>
+      <p class="developed">
         Разработано:<br />
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
@@ -113,7 +113,7 @@
   </footer>
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам:</h2>
-    <!--Здесь будет форма отправки-->
+    <!--форма отправки сообщения-->
     <form action="post" class="form">
       <p><label>Ваше имя<input type="text" name="name" placeholder="Имя Фамилия"></label></p>
       <p><label>Ваш e-mail:<input type="text" name="email" placeholder="e-mail@example.com"></label></p>

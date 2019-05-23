@@ -1,15 +1,397 @@
-.menu-back {
+body {
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.top-menu {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
   background-color: #293449;
-  color: white;
+}
+
+.top-menu a {
+  color: #ffffff;
 }
 
 
-.footer-nav-back {
-  color: white;
+
+.header-logo {
+
+  display: block;
+  width: 220px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  background-color: #ee3643;
+  background-position: 0 0;
+  box-shadow: 0 5px 0 #b52933;
+}
+
+.header-logo img {
+  vertical-align: middle;
+}
+
+a.header-logo:hover,
+a.header-logo:focus {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 #9a212a;
+}
+
+a.header-logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 #8e1e26;
+}
+
+.search input {
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+.search input:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.bookmarks:hover,
+.shopping-cart:hover,
+.bookmarks:focus,
+.shopping-cart:focus {
+  background-color: #212a3a;
+}
+
+.bookmarks:active,
+.shopping-cart:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+
+}
+
+.order {
+  background-color: #63a63e;
+}
+
+.order:hover,
+.order:focus {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-navigation {
+  background-color: #f4f7f9;
+}
+.headline {
+  color: #ee3643;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.phone {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-contact {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login-link,
+.registration-link {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.login-link:hover,
+.registration-link:hover,
+.login-link:focus,
+.registration-link:focus {
+  color: #ee3643;
+}
+
+.login-link:active,
+.registration-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.username {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.username button:active {
+  color: #rgba(0, 0, 0, 0.3);
+
+}
+
+
+.user-navigation a {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.site-navigation {
+  width: 940px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293429;
+}
+
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
+
+.container h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.container p {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.transport-company {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.transport-company li::before {
+  content: " - ";
+  color: #ee3643;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.filters legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+.filter-button {
+
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 318px;;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item a {
+  color: inherit;
+}
+
+.catalog-item-oldprice {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.catalog-item-price {
+  padding: 5px;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3443;
+
+}
+
+.main-footer {
+  color: #ffffff;
   background-color: #32425c;
 }
 
-.footer-contacts-back {
-  color: white;
+
+.footer-logo {
+
+  display: block;
+  width: 220px;
+  height: 63px;
+  text-align: center;
+  line-height: 63px;
+  background-color: #ee3643;
+  background-position: 0 0;
+  box-shadow: 0 5px 0 #b52933;
+}
+
+.footer-logo img {
+  vertical-align: middle;
+}
+
+.footer-bottom {
   background-color: #293449;
+}
+
+a.footer-logo:hover,
+a.footer-logo:focus {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 #9a212a;
+}
+
+a.footer-logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 #8e1e26;
+}
+
+.contacts {
+  color: #f3f7f9;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-navigation {
+  list-style: none;
+
+}
+
+.footer-navigation a {
+  color: #f1f5f7;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-navigation li:nth-child(2n) a {
+  color: #ffd180;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-social {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-social a {
+  color: #ffffff;
+}
+
+.mail a,
+.developed a {
+  color: #ffd180;
+}
+
+.mail a:hover,
+.developed a:hover,
+.mail a:focus,
+.developed a:focus {
+  text-decoration: underline;
+}
+
+.mail a:active,
+.developed a:active {
+  color: #ee3643;
+}
+
+
+
+.modal,
+.visually-hidden {
+  display: none;
 }
