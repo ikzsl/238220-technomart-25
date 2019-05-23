@@ -6,11 +6,11 @@ body {
 a {
   text-decoration: none;
 }
+
 .top-menu {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-
   background-color: #293449;
 }
 
@@ -21,7 +21,6 @@ a {
 
 
 .header-logo {
-
   display: block;
   width: 220px;
   height: 42px;
@@ -49,10 +48,10 @@ a.header-logo:active {
 
 .search input {
   color: #ffffff;
-
   background-color: transparent;
   border: none;
 }
+
 .search input:focus {
   color: #000000;
   background-color: #ffffff;
@@ -69,7 +68,6 @@ a.header-logo:active {
 .shopping-cart:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
-
 }
 
 .order {
@@ -89,6 +87,7 @@ a.header-logo:active {
 .main-navigation {
   background-color: #f4f7f9;
 }
+
 .headline {
   color: #ee3643;
   font-style: italic;
@@ -135,7 +134,7 @@ a.header-logo:active {
 }
 
 .username button:active {
-  color: #rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 
 }
 
@@ -252,7 +251,6 @@ a.header-logo:active {
 
 
 .filter-button {
-
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
@@ -268,7 +266,7 @@ a.header-logo:active {
 
 .catalog-item {
   width: 220px;
-  height: 318px;;
+  height: 318px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -296,7 +294,6 @@ a.header-logo:active {
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3443;
-
 }
 
 .main-footer {
@@ -306,7 +303,6 @@ a.header-logo:active {
 
 
 .footer-logo {
-
   display: block;
   width: 220px;
   height: 63px;
@@ -344,7 +340,6 @@ a.footer-logo:active {
 
 .footer-navigation {
   list-style: none;
-
 }
 
 .footer-navigation a {
