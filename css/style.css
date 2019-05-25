@@ -156,8 +156,7 @@ a.header-logo:active {
 }
 
 .site-navigation {
-  width: 940px;
-  height: 60px;
+
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
@@ -265,8 +264,7 @@ a.header-logo:active {
 }
 
 .catalog-item {
-  width: 220px;
-  height: 318px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
