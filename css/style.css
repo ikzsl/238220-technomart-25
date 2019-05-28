@@ -218,6 +218,11 @@ a.header-logo:active {
 }
 main.container {
   display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
 }
 
 .container h2 {
@@ -299,6 +304,9 @@ main.container {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
 }
 
