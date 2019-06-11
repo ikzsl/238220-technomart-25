@@ -4,10 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <title>Техномарт: инструменты для ремонта</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet"
-    type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet"
-    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -55,7 +54,12 @@
           Интернет-магазин строительных материалов и инструментов для ремонта
         </h1>
         <p class="header-contact">
-          <span class="phone">+7 (812) 555-05-55</span>
+
+          <a href="tel:+78125550555" class="phone"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+              viewBox="0 0 19 19">
+              <path fill="#c5c5c5"
+                d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" />
+            </svg>+7 (812) 555-05-55</a>
           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
         <div class="user-navigation">
@@ -81,6 +85,37 @@
     </nav>
   </header>
   <main class="container main">
+    <section class="promo">
+      <ul class="promo-top">
+        <li class="promo-materials">
+          <div class="flag flag-new">новинка</div>
+          Материалы
+          <a href="#" class="promo-button">На любой вкус</a>
+        </li>
+        <li class="promo-instrument">Инструмент
+          <a href="#" class="promo-button">На все случаи</a>
+        </li>
+        <li class="promo-technic">Техника
+          <a href="#" class="promo-button">Для стройки</a>
+        </li>
+      </ul>
+      <div class="promo-bottom">
+        <ul class="promo-slider">
+          <li>Дрели</li>
+          <li>Перфораторы</li>
+        </ul>
+        <ul class="promo-bottom-right">
+          <li class="promo-discount">Скидки 50%
+            <a href="#" class="promo-button">На 350 товаров</a>
+          </li>
+          <li class="promo-delivery">Доставка
+            <a href="#" class="promo-button">Бесплатно</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </section>
     <div class="company-info">
       <section class="about-company">
         <h2>Компания «Техномарт»</h2>
@@ -111,7 +146,7 @@
     <div class="footer-menu footer-nav-back container">
       <div class="footer-contacts">
         <a class="footer-logo" href="index.html">
-          <img src="img/logo.png" width="109" height="19" alt="Логотип интернет-магазина Техномарт" />
+          <img src="img/logo.png" width="138" height="23" alt="Логотип интернет-магазина Техномарт" />
         </a>
         <p class="contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -122,7 +157,7 @@
         <ul class="footer-navigation-top">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
@@ -130,7 +165,9 @@
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Спецпредложения</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -174,7 +211,7 @@
 
 
 
-  <section class="modal modal-feedback">
+  <section class="modal modal-feedback visually-hidden">
     <h2 class="visually-hidden">Напишите нам:</h2>
     <!--форма отправки сообщения-->
     <form action="post" class="feedback-form ">
@@ -204,11 +241,9 @@
 
   <!--Наш адрес на карте-->
 
-  <section class="modal modal-map">
+  <section class="modal modal-map visually-hidden">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe
-      src="https://yandex.ru/map-widget/v1/?um=constructor%3A154fc89496a2dda67f94af181ea68255f138aaa7aed906701ffe4db8af1f98ad&amp;source=constructor"
-      width="940" height="446" frameborder="0"></iframe>
+
     <button type="button" class="modal-close">Закрыть</button>
   </section>
 </body>
