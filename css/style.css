@@ -502,36 +502,74 @@ main.container {
 
 
 .promo-slider {
-
+  position: relative;
   background-color: #6d5e5e;
   width: 620px;
   height: 266px;
   overflow: hidden;
   margin: 0;
   padding: 0;
-
 }
 
 .promo-slider-inner {
-
-  width: 200%;
-  transform: translateY(-274px);
+  height: 200%;
+  transform: translateY(-2px);
 }
 
+.slider-control input[type="radio"] {
+  display: none;
+}
+
+.slider-controls label {
+  position: absolute;
+  content: "1111";
+  width: 6px;
+  height: 6px;
+  z-index: 30;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.slider-controls label[for="btn-1"] {
+  bottom: 40px;
+  left: 295px;
+}
+
+.slider-controls label[for="btn-2"] {
+  bottom: 40px;
+  right: 295px;
+}
+
+#btn-1:checked~.slider-controls label[for="btn-1"],
+#btn-2:checked~.slider-controls label[for="btn-2"] {
+  background-color: #ee3643;
+}
+
+#btn-1:checked ~  .promo-slider-inner {
+  transform: translateY(0px);
+}
+
+#btn-2:checked ~ .promo-slider-inner .promo-slide {
+  transform: translateY(-272px);
+}
+
+
 .promo-slide {
-position: relative;
-margin: 0;
-padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .promo-slide img {
 
   margin: 0;
   padding: 0;
-  }
+}
 
 .promo-slide h3 {
   position: absolute;
+
   top: 25px;
   left: 25px;
   margin: 0;
@@ -541,6 +579,19 @@ padding: 0;
   line-height: 36px;
   font-weight: 700px;
   text-transform: uppercase;
+}
+
+.promo-slide span {
+
+  position: absolute;
+  top: 62px;
+  left: 25px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 
