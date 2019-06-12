@@ -495,11 +495,60 @@ main.container {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+
+
+
+
+
+
 .promo-slider {
+
   background-color: #6d5e5e;
   width: 620px;
   height: 266px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
 }
+
+.promo-slider-inner {
+
+  width: 200%;
+  transform: translateY(-274px);
+}
+
+.promo-slide {
+position: relative;
+margin: 0;
+padding: 0;
+}
+
+.promo-slide img {
+
+  margin: 0;
+  padding: 0;
+  }
+
+.promo-slide h3 {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
 
 .promo-materials {
   background-color: #ffbf47;
@@ -744,7 +793,9 @@ main.container {
   color: inherit;
 }
 
-
+.hidden {
+  visibility: hidden;
+}
 
 .catalog-item-oldprice {
   width: 80px;
@@ -1216,9 +1267,12 @@ form.search {
   line-height: 20px;
   text-align: center;
   min-height: 40px;
-  padding: 0 25px;
+  padding: 0;
+  padding-left: 26px;
+  padding-right: 20px;
+
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .catalog-item .actions {
