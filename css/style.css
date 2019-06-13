@@ -85,7 +85,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   /* justify-content: space-between; */
 
-  width: 450px;
+  min-width: 450px;
 }
 
 .top-menu-links a {
@@ -515,7 +515,7 @@ main.container {
 
 .slider-controls label {
   position: absolute;
-  content: "1111";
+  content: "";
   width: 6px;
   height: 6px;
   bottom: 35px;
@@ -759,6 +759,7 @@ main.container {
   margin-bottom: 30px;
   padding: 0;
   color: #32425c;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -780,7 +781,7 @@ main.container {
 }
 
 .tabs-container {
-position: relative;
+  position: relative;
   display: flex;
   margin-top: 70px;
 }
@@ -792,6 +793,11 @@ position: relative;
   background-color: #32425c;
   min-width: 240px;
   min-height: 185px;
+}
+
+.tablinks {
+  background-color: #32425c;
+
 }
 
 
@@ -1364,7 +1370,7 @@ form.search {
   top: 70%;
   background-color: #ffffff;
   min-width: 620px;
-  z-index: 3;
+  z-index: 30;
 
 
 }
@@ -1469,6 +1475,17 @@ form.search {
   top: 10px;
 }
 
+.modal-feedback {
+  display: none;
+
+}
+
+.modal-feedback-show {
+  display: block;
+  position: fixed;
+  top: 50%;
+}
+
 
 .modal-feedback input,
 .modal-feedback textarea {
@@ -1507,10 +1524,18 @@ form.search {
 
 
 .modal-map {
-
+  display: none;
+  top: 50%;
   width: 940px;
   height: 446px;
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+
+}
+
+.modal-map-show {
+  display: block;
+  position: fixed;
+  background-color: #c5c5c5;
 }
 
 .modal-map .modal-close {

@@ -15,3 +15,34 @@ function openService(evt, serviceName) {
 
 // Get the element with id="default" and click on it
 document.getElementById("default").click();
+
+var feedbackButton = document.querySelector(".feedback-button");
+var popup = document.querySelector(".modal-feedback");
+var closeFeedback = popup.querySelector(".modal-close");
+var names = popup.querySelector("[name=names]");
+
+
+feedbackButton.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-feedback-show");
+  names.focus();
+});
+
+closeFeedback.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-feedback-show");
+});
+
+var mapLink = document.querySelector(".map");
+var mapPopup = document.querySelector(".modal-map");
+var closeMap = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function(evt) {
+evt.preventDefault();
+mapPopup.classList.add("modal-map-show")
+})
+
+closeMap.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-map-show");
+})

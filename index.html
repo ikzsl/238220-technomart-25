@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="main-header ">
+  <header class="main-header">
     <div class="header-background">
       <div class="top-menu container">
         <a href="#" class="header-logo">
@@ -219,30 +219,6 @@
       </ul>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="services">
       <div class="services-inner container">
         <h2>Сервисы</h2>
@@ -254,58 +230,28 @@
             <button class="tablinks" onclick="openService(event, 'guarantee')">Гарантия</button>
             <button class="tablinks" onclick="openService(event, 'credit')">Кредит</button>
           </div>
-
           <div id="delivery" class="tabcontent">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж!<img src="/img/delivery.png" alt="Доставка"></p>
-
+              заработаем, поднимая его на ваш этаж!<img src="img/delivery.png" alt="Доставка"></p>
           </div>
-
           <div id="guarantee" class="tabcontent">
             <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
               возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
-              восстановите как-нибудь сами.<img src="/img/guarantee.png" alt="Гарантия"></p>
-
+              восстановите как-нибудь сами.<img src="img/guarantee.png" alt="Гарантия"></p>
           </div>
-
           <div id="credit" class="tabcontent">
             <h3>Кредит</h3>
             <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.<img src="/img/credit.png"
+              Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.<img src="img/credit.png"
                 alt="Кредит"></p>
-
           </div>
         </div>
-
       </div>
-
-
-
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="company-info container">
       <section class="about-company">
         <h2>Компания «Техномарт»</h2>
@@ -328,7 +274,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
         <a href="#" class="map"><img src="img/map.jpg" width="300" height="158" alt="Мы на карте" /></a>
-        <a href="#" class="button">Заблудились? Напишите нам!</a>
+        <a href="#" class="button feedback-button">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
@@ -399,16 +345,14 @@
     </div>
   </footer>
 
-
-
-  <section class="modal modal-feedback visually-hidden">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Напишите нам:</h2>
     <!--форма отправки сообщения-->
     <form action="post" class="feedback-form ">
       <div class="row modal-feedback-container">
         <div class="modal-feedback-group name">
           <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="name" type="text" name="names" placeholder="Имя Фамилия">
         </div>
 
         <div class="modal-feedback-group email">
@@ -426,13 +370,10 @@
     </form>
     <button type="button" class="modal-close">Закрыть</button>
   </section>
-
-
-
   <!--Наш адрес на карте-->
-
-  <section class="modal modal-map visually-hidden">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A154fc89496a2dda67f94af181ea68255f138aaa7aed906701ffe4db8af1f98ad&amp;source=constructor" width="940" height="446" frameborder="0"></iframe>
 
     <button type="button" class="modal-close">Закрыть</button>
   </section>
