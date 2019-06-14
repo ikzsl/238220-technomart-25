@@ -364,9 +364,6 @@ a.header-logo:active {
   flex-wrap: wrap;
   align-items: center;
 
-
-
-
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
@@ -718,26 +715,6 @@ main.container {
   align-self: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .services {
   background-color: #f4f7f9;
   padding-bottom: 100px;
@@ -852,18 +829,6 @@ main.container {
   padding: 0 12px;
   width: 70%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .transport-company li {
@@ -1008,6 +973,7 @@ main.container {
   line-height: 18px;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+  background-color: #ffffff;
 }
 
 .filter-button:hover,
@@ -1195,8 +1161,6 @@ a.footer-logo:active {
 }
 
 
-
-
 .footer-navigation-top a {
   color: #f1f5f7;
 }
@@ -1371,10 +1335,7 @@ form.search {
   background-color: #ffffff;
   min-width: 620px;
   z-index: 30;
-
-
 }
-
 
 
 .modal-feedback-group label {
@@ -1382,14 +1343,11 @@ form.search {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 18px;
-
 }
-
 
 
 .feedback-form,
 .modal-back {
-
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   border-top: 7px solid #ee3643;
 }
@@ -1417,9 +1375,7 @@ form.search {
 }
 
 .modal-order-buttons {
-
   margin: 0;
-
 }
 
 .button-submit {
@@ -1434,7 +1390,6 @@ form.search {
   background-color: #ee3643;
   border: none;
   border-radius: 4px;
-
 }
 
 .button-submit:hover,
@@ -1453,8 +1408,6 @@ form.search {
   align-items: center;
   margin-top: 46px;
   margin-bottom: 20px;
-
-
 }
 
 .modal-close {
@@ -1467,7 +1420,6 @@ form.search {
   right: 9px;
   border: none;
   font-size: 0;
-
   cursor: pointer;
 }
 
@@ -1477,7 +1429,6 @@ form.search {
 
 .modal-feedback {
   display: none;
-
 }
 
 .modal-feedback-show {
@@ -1529,7 +1480,6 @@ form.search {
   width: 940px;
   height: 446px;
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
-
 }
 
 .modal-map-show {
@@ -1561,7 +1511,6 @@ form.search {
   padding: 0;
   padding-left: 26px;
   padding-right: 20px;
-
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1570,7 +1519,6 @@ form.search {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 218px;
   height: 88px;
   padding: 40px 0;
@@ -1612,11 +1560,12 @@ form.search {
   display: block;
 }
 
-.inner .catalog-item:nth-child(3n) {
+
+.main-page .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.catalog-item:nth-child(4n) {
+.inner .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -1630,7 +1579,6 @@ form.search {
 .modal-back-container {
   display: flex;
   justify-content: space-between;
-
 }
 
 .inner h1 {
@@ -1641,6 +1589,7 @@ form.search {
   text-transform: uppercase;
   font-size: 30;
   line-height: 30px;
+  font-weight: 400;
 }
 
 
@@ -1707,7 +1656,6 @@ form.search {
 
 
 .brands input:checked+.checkbox-indicator::before {
-
   top: 8px;
   left: 6px;
   width: 4px;
@@ -1716,7 +1664,6 @@ form.search {
 }
 
 .brands input:checked+.checkbox-indicator::after {
-
   top: 7px;
   left: 6px;
   width: 22px;
@@ -1733,7 +1680,6 @@ form.search {
 .brands input:disabled+.checkbox-indicator::before,
 .brands input:disabled+.checkbox-indicator::after {
   background-color: #b5b5b5;
-
   opacity: 0.3;
 }
 
@@ -1831,7 +1777,6 @@ form.search {
   left: 135px;
   background-color: #32425c;
   border-radius: 50%;
-
 }
 
 
@@ -1862,7 +1807,77 @@ form.search {
 
 .copyright {
   margin: 0;
-
-
   min-width: 228px;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  list-style: none;
+}
+
+.sort ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+.sort span,
+.sort li {
+  padding: 10px 20px;
+}
+
+.sort-by a {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-by a:hover,
+.sort-by a:focus {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort-by a:active {
+  color: #ee3643;
+  border: none;
+}
+
+.sort-indicator {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.sort-indicator a::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  border: 5px solid transparent;
+  border-bottom: 10px solid #c5c5c5;
+  border-top: none;
+}
+
+.sort-indicator .sequence-down::before {
+  transform: rotate(180deg);
+}
+
+.sort-indicator a:hover::before,
+.sort-indicator a:focus::before {
+  border-bottom-color: #000000;
+}
+
+.sort-indicator a:active::before {
+  border-bottom-color: #ee3643;
 }

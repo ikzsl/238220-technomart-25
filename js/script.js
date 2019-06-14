@@ -33,6 +33,8 @@ closeFeedback.addEventListener("click", function(evt) {
   popup.classList.remove("modal-feedback-show");
 });
 
+
+
 var mapLink = document.querySelector(".map");
 var mapPopup = document.querySelector(".modal-map");
 var closeMap = mapPopup.querySelector(".modal-close");
