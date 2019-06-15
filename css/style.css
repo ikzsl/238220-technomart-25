@@ -1619,6 +1619,19 @@ form.search {
   outline: none;
 }
 
+/* "Товар добавлен в корзину" - модальное окно */
+
+
+.modal-back {
+  display: none;
+}
+
+
+.modal-back-show {
+  display: block;
+  position: fixed;
+  top: 50%;
+}
 
 /* Карта - модальное окно */
 
