@@ -115,9 +115,28 @@
     <h1>Перфораторы</h1>
     <div class="main-content">
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+
         <!--форма фильтра товаров-->
         <form action="https://echo.htmlacademy.ru" method="get" class="form">
+          <h2 class="filter-header">Фильтр:</h2>
+          <fieldset class="filter-item">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input type="text" name="min-price" value="5000"></label>
+                <span>&mdash;</span>
+                <label class="max-price"><input type="text" name="max-price" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
+          <hr>
           <fieldset>
             <legend>Производители:</legend>
             <ul class="brands">
@@ -133,6 +152,7 @@
                     class="checkbox-indicator"></span></label></li>
             </ul>
           </fieldset>
+          <hr>
           <fieldset>
             <legend>Питание:</legend>
             <ul class="is-wired">
@@ -292,6 +312,12 @@
             </a>
           </li>
         </ul>
+        <ul class="pagination-list">
+            <li class="pagination-item  pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-next"><a href="#">Следующая</a></li>
+          </ul>
       </section>
     </div>
   </main>

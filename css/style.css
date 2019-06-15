@@ -28,6 +28,10 @@ input[type="radio"].visually-hidden {
   background-color: #f4f7f9;
 }
 
+.inner .main-header {
+  margin-bottom: 20px;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -363,7 +367,6 @@ a.header-logo:active {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
@@ -614,8 +617,6 @@ main.container {
   font-weight: 400;
 }
 
-
-
 .promo-materials {
   background-color: #ffbf47;
   background-image: url(/img/icon-1.svg);
@@ -661,6 +662,7 @@ main.container {
   font-weight: 400;
 }
 
+/* Популярные товары */
 
 .popular-goods h2,
 .popular-brands h2,
@@ -689,6 +691,7 @@ main.container {
 }
 
 
+/* Популярные бренды */
 
 .popular-brands-list {
   display: flex;
@@ -714,6 +717,8 @@ main.container {
 .popular-brands-list a {
   align-self: center;
 }
+
+/* Сервисы */
 
 .services {
   background-color: #f4f7f9;
@@ -763,7 +768,7 @@ main.container {
   margin-top: 70px;
 }
 
-/* Style the tab */
+
 .tab {
   margin-right: 68px;
   position: relative;
@@ -791,7 +796,6 @@ main.container {
 
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   display: block;
   background-color: inherit;
@@ -809,13 +813,11 @@ main.container {
   line-height: 30px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #293449;
   color: #ffffff;
 }
 
-/* Create an active/current "tab button" class */
 .tab button.active {
   background-color: #ffffff;
   color: #32425c;
@@ -823,9 +825,8 @@ main.container {
     inset 0 1px 0 0 #ffffff;
 }
 
-/* Style the tab content */
-.tabcontent {
 
+.tabcontent {
   padding: 0 12px;
   width: 70%;
 }
@@ -851,9 +852,12 @@ main.container {
   background-color: #ee3643;
 }
 
-.breadcrumbs {
+/* Хлебные крошки */
 
+.breadcrumbs {
   display: flex;
+  margin: 0;
+  margin-bottom: 20px;
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -944,6 +948,33 @@ main.container {
   background-color: #ba2732;
 }
 
+/* Фильтр товаров */
+
+.form {
+  margin-right: 20px;
+}
+
+.form .filter-header {
+  padding: 10px 18px;
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.filters {
+  min-width: 240px;
+}
+
+.filters fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .filters legend {
   position: relative;
   font-family: "PT Sans", Arial, sans-serif;
@@ -972,7 +1003,7 @@ main.container {
   font-size: 13px;
   line-height: 18px;
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #ffffff;
 }
 
@@ -985,9 +1016,78 @@ main.container {
   border-color: #ee3643;
 }
 
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background-color: #f7f3ec;
+  border-radius: 5px;
+}
 
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 40%;
+  margin-left: 20%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background-color: #ababab;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.price-controls input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  width: 95px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
+
+/* Каталог товаров */
 
 .catalog-list {
+  margin: 0;
+  margin-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1066,12 +1166,63 @@ main.container {
   height: 0;
   border: 20px solid #ffffff;
   border-left-color: #ee3643;
-
 }
+
+/* Пагинация */
+
+.pagination-list {
+  margin: 0;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
+
+.pagination-list a {
+  display: block;
+  box-sizing: border-box;
+  height: 38px;
+  min-width: 38px;
+  margin-right: 10px;
+  padding: 12px;
+  text-align: center;
+color: inherit;
+border: 1px solid #e5e5e5;
+border-radius: 3px;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+border-color: #bdc6ca;
+}
+
+.pagination-list a:active {
+  border-color: #ee3643;
+  }
+
+.pagination-item-current a {
+  border-color: #ee3643;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.pagination-next a {
+  padding: 12px 30px;
+}
+
+/* Подвал */
 
 .main-footer {
   color: #ffffff;
   background-color: #32425c;
+
 }
 
 .footer-menu {
@@ -1225,14 +1376,12 @@ a.footer-logo:active {
 }
 
 
-
 form.search {
   position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 
 
 .search input {
@@ -1502,7 +1651,6 @@ form.search {
 }
 
 
-
 .catalog-item h3 {
   font-size: 18px;
   line-height: 20px;
@@ -1583,6 +1731,8 @@ form.search {
 
 .inner h1 {
   display: block;
+  margin: 0;
+  margin-bottom: 20px;
   padding: 32px 30px;
   color: #32425c;
   background-color: #f2f6f8;
@@ -1590,21 +1740,6 @@ form.search {
   font-size: 30;
   line-height: 30px;
   font-weight: 400;
-}
-
-
-.filters fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-
-/*Фильтр товаров*/
-
-.filters {
-  min-width: 240px;
 }
 
 
@@ -1617,13 +1752,7 @@ form.search {
 }
 
 
-.form legend::before {
-  position: absolute;
-  content: "";
-  width: 220px;
-  height: 1px;
-  background-color: #e5e5e5;
-}
+
 
 .brands li {
   margin-bottom: 24px;
@@ -1811,6 +1940,8 @@ form.search {
 }
 
 .sort {
+  margin: 0;
+  margin-bottom: 21px;
   display: flex;
   justify-content: space-between;
   background-color: #f7f3ec;
@@ -1820,6 +1951,7 @@ form.search {
   line-height: 18px;
   color: #000000;
   list-style: none;
+  border-radius: 5px;
 }
 
 .sort ul {
