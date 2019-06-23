@@ -148,6 +148,7 @@ a.header-logo:active {
   opacity: 1;
 }
 
+
 .bookmarks:active svg,
 .shopping-cart:active svg {
   opacity: 0.5;
@@ -178,6 +179,11 @@ a.header-logo:active {
   background-color: #ffffff;
   outline: none;
 }
+
+.search-input:focus~svg path {
+  fill: #ee3643;
+}
+
 
 
 
@@ -324,9 +330,10 @@ a.header-logo:active {
   background-color: #ffffff;
 }
 
-.username button:active {
-  color: rgba(0, 0, 0, 0.3);
+.username:active {
+  color: #c5c5c5;
 }
+
 
 .main-navigation {
   display: flex;
@@ -1951,8 +1958,8 @@ form.search {
 }
 
 
-.username:hover path {
-  fill: #32425c;
+.username:active path {
+  fill: #c5c5c5;
 }
 
 .logout {
@@ -2066,4 +2073,3 @@ form.search {
   position: absolute;
   padding-right: 24px;
 }
-
