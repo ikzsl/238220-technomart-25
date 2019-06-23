@@ -596,6 +596,9 @@ main.container {
 }
 
 .promo-slide .button {
+  position: absolute;
+  top: 208px;
+  left: 25px;
   font-weight: 400;
 }
 
@@ -610,8 +613,6 @@ main.container {
   background-image: url(../img/icon-1.svg);
   background-position-x: 212px;
   background-position-y: 32px;
-
-
 }
 
 .promo-instrument {
@@ -1954,10 +1955,19 @@ form.search {
   fill: #32425c;
 }
 
-.icon-logout {
+.logout {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 3px;
+  right: -10px;
+}
+
+.logout:hover path,
+.logout:focus path {
+  fill: #32425c;
+}
+
+.logout:active path {
+  fill: #c5c5c5;
 }
 
 .user-navigation-inner {
@@ -2056,3 +2066,4 @@ form.search {
   position: absolute;
   padding-right: 24px;
 }
+
