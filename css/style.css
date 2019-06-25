@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 a {
@@ -24,7 +24,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   margin-bottom: 59px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   background-color: #f4f7f9;
 }
 
@@ -229,7 +229,7 @@ a.header-logo:active {
   max-width: 196px;
   margin: 0;
   margin-left: 53px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ee3643;
   font-style: italic;
   font-weight: 400;
@@ -412,7 +412,7 @@ main.container {
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
 }
 
@@ -816,7 +816,8 @@ main.container {
   line-height: 30px;
 }
 
-.tab button:hover {
+.tab button:hover,
+.tab button:focus {
   background-color: #293449;
   color: #ffffff;
 }
@@ -838,7 +839,7 @@ main.container {
 .transport-company li {
   position: relative;
   padding-bottom: 20px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
@@ -862,11 +863,12 @@ main.container {
   margin: 0;
   margin-bottom: 20px;
   list-style: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 13px;
   line-height: 18px;
+  padding-left: 0;
 }
 
 .breadcrumbs li {
@@ -958,7 +960,7 @@ main.container {
 .form .filter-header {
   padding: 10px 18px;
   background-color: #f7f3ec;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin: 0;
@@ -978,7 +980,7 @@ main.container {
 
 .filters legend {
   position: relative;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 17px;
@@ -987,7 +989,7 @@ main.container {
 
 .filters ul {
   list-style: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 20px;
@@ -998,7 +1000,7 @@ main.container {
   text-align: center;
   padding: 10px 20px;
   max-width: 140px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 13px;
@@ -1072,7 +1074,7 @@ main.container {
 
 
 .price-controls input {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -1100,7 +1102,7 @@ main.container {
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1135,22 +1137,24 @@ main.container {
 }
 
 .catalog-item-oldprice {
-  width: 80px;
+  min-width: 80px;
   margin: 10px auto;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
   text-decoration: line-through;
+  text-align: center;
 }
 
 .catalog-item-price {
   position: relative;
-  width: 80px;
+  width: 138px;
   margin: 10px auto;
   margin-bottom: 20px;
-  padding: 11px 30px;
+  padding: 11px 3px;
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 3px;
@@ -1177,7 +1181,7 @@ main.container {
   padding: 0;
   list-style: none;
   text-transform: uppercase;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1400,7 +1404,7 @@ form.search {
 }
 
 .main p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -1524,7 +1528,7 @@ form.search {
 }
 
 .button-submit {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   min-width: 460px;
   margin: 0 80px;
   font-size: 14px;
@@ -1585,7 +1589,7 @@ form.search {
 
 .modal-feedback input,
 .modal-feedback textarea {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
@@ -1640,6 +1644,11 @@ form.search {
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
+.modal-map iframe {
+  border: none;
+  background-image: url(../img/map-big.png);
+}
+
 .modal-map-show {
   display: block;
   position: fixed;
@@ -1668,7 +1677,7 @@ form.search {
   padding: 0;
   padding-left: 26px;
   padding-right: 20px;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 10px;
 }
 
@@ -1696,7 +1705,7 @@ form.search {
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius: 3px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -1780,7 +1789,7 @@ form.search {
   display: block;
   margin: 0;
   margin-bottom: 20px;
-  padding: 32px 30px;
+  padding: 30px 28px;
   color: #32425c;
   background-color: #f2f6f8;
   text-transform: uppercase;
@@ -1799,7 +1808,7 @@ form.search {
 }
 
 .brands li {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .brands input+.checkbox-indicator {
@@ -1807,8 +1816,8 @@ form.search {
   content: "";
   left: -40px;
   background-color: #ffffff;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #c5c5c5;
   border-radius: 2px;
 }
@@ -1817,6 +1826,10 @@ form.search {
   border-color: #b5b5b5;
 }
 
+.brands input:focus+.checkbox-indicator {
+  box-shadow: 0px 0px 10px  #4d90fe;
+
+}
 
 .brands input:checked+.checkbox-indicator::before,
 .brands input:checked+.checkbox-indicator::after {
@@ -1892,6 +1905,13 @@ form.search {
 .is-wired input:hover+.radio-indicator {
   border-color: #b5b5b5;
 }
+
+.is-wired input:focus+.radio-indicator {
+
+
+     box-shadow: 0px 0px 10px  #4d90fe;
+}
+
 
 
 .is-wired input:checked+.radio-indicator::before {
@@ -1988,11 +2008,11 @@ form.search {
 
 .sort {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
   display: flex;
   justify-content: space-between;
   background-color: #f7f3ec;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
@@ -2005,14 +2025,17 @@ form.search {
   margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
 
 .sort span,
 .sort li {
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  padding-left: 20px;
 }
 
 .sort-by a {
@@ -2072,4 +2095,31 @@ form.search {
 .popular-brands-header a {
   position: absolute;
   padding-right: 24px;
+}
+.about-perforators {
+width: 100%;
+  background-color: #f4f7f9;
+}
+
+.about-perforators h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+  padding-bottom: 27px;
+}
+
+.about-perforators p {
+  padding-bottom: 67px;
+}
+
+.filters hr {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.brands {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: -15px;
 }
