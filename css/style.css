@@ -41,10 +41,28 @@ input[type='radio'].visually-hidden {
   margin-bottom: 22px;
 }
 
+.inner h2 {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+
+  color: #32425c;
+
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
 }
+
+
 
 .modal-feedback-container,
 .modal-back-container {
@@ -57,9 +75,13 @@ input[type='radio'].visually-hidden {
   padding-top: 66px;
   padding-bottom: 66px;
   padding-left: 100px;
+  background-color: #ffffff;
 
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #000000;
 
   text-align: center;
 }
@@ -216,34 +238,16 @@ a.header-logo:active {
   background-color: #293449;
 }
 
-.search-input::-webkit-input-placeholder {
-  color: #fff;
-}
-
-.search-input:-ms-input-placeholder {
-  color: #fff;
-}
-
-.search-input::-ms-input-placeholder {
-  color: #fff ;
-}
-
+.search-input::-webkit-input-placeholder,
+.search-input:-ms-input-placeholder,
+.search-input::-ms-input-placeholder,
 .search-input::placeholder {
   color: #fff;
 }
 
-.search-input:focus::-webkit-input-placeholder {
-  color: #293449;
-}
-
-.search-input:focus:-ms-input-placeholder {
-  color: #293449;
-}
-
-.search-input:focus::-ms-input-placeholder {
-  color: #293449;
-}
-
+.search-input:focus::-webkit-input-placeholder ,
+.search-input:focus:-ms-input-placeholder ,
+.search-input:focus::-ms-input-placeholder ,
 .search-input:focus::placeholder {
   color: #293449;
 }
@@ -911,7 +915,7 @@ main.container {
 
   margin-bottom: 17px;
 
-  border: 1px solid #aeaeae;
+  border: 1px solid #eaeaea;
 
   justify-content: center;
 }
@@ -1152,6 +1156,7 @@ main.container {
 .button,
 .white-button {
   display: inline-block;
+  vertical-align: baseline;
 
   box-sizing: border-box;
   min-width: 195px;
@@ -1383,6 +1388,7 @@ main.container {
   position: relative;
 
   display: inline-block;
+  vertical-align: baseline;
 
   width: 218px;
   margin-right: 20px;
@@ -1755,6 +1761,7 @@ form.search {
 
 .main-contact .map {
   display: inline-block;
+  vertical-align: middle;
 
   margin-top: 30px;
   margin-bottom: 36px;
@@ -2166,21 +2173,7 @@ form.search {
   justify-content: space-between;
 }
 
-.inner h2 {
-  display: block;
 
-  margin: 0;
-  margin-bottom: 20px;
-  padding-top: 30px;
-  padding-bottom: 28px;
-  padding-left: 28px;
-
-  color: #32425c;
-
-  text-transform: uppercase;
-
-  background-color: #f2f6f8;
-}
 
 
 
@@ -2546,6 +2539,8 @@ form.search {
   padding: 0;
   padding-top: 65px;
   padding-bottom: 27px;
+
+  color: #000000;
 }
 
 .about-perforators p {
